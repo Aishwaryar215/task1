@@ -1,0 +1,111 @@
+body{
+    height: 100vh;
+   background-image: url(./BACKTODO.jpg);
+   position: relative;
+   background-repeat: no-repeat;
+   background-size: cover;
+    
+}
+  .tasker ul, .tasker li,
+  .tasker .error,
+  .tasker button,
+  .tasker input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+    background: transparent;
+  }
+  .todo-header button, .todo-lists .task button {
+    transition: all 0.2s ease;
+    -webkit-transition: all 0.2s ease;
+  }
+  .tasker {
+    max-width: 400px;
+    margin: 200px;
+    margin-left: 40%;
+  }
+  .tasker .error {
+    display: none;
+    background: hsl(0, 69%, 6%);
+    color: #fff;
+    padding: 14px;
+    margin-bottom: 10px;
+    border-radius: 5px;
+    text-align: center;
+  }
+  .tasker ul {
+    background: #fff;
+  }
+  .tasker li,
+  .tasker .error,
+  .tasker button,
+  .tasker input {
+    font: 18px/1.25em 'Lato', sans-serif;
+  }
+  .todo-header {
+    display: inline-flex;
+    background-color:#fff ;
+    justify-content: space-between;
+    width: 100%;
+  }
+  #input-task {
+    color: white;
+    color: hsl(231, 84%, 45%);
+    cursor: pointer;
+    outline: 30pt;
+    size: space-between;
+    margin: 20px;
+    padding: 50px,50px,50px,50px;
+
+}
+  }
+  .todo-header input,
+  .todo-header button {
+    color: #fff;
+    box-sizing: border-box;
+    font-size: 1.25em;
+    padding: 14px;
+    margin-top: 140px;
+    padding-top: 140,50px,140px,50px;
+  }
+  .todo-header input {
+    flex-grow: 2;
+  }
+  .todo-header button {
+    background: hsla(323, 77%, 48%, 0.048);
+    border-left: 1px solid #098009;
+  }
+  .todo-header button:hover {
+    background: #b85c70;
+  }
+  .todo-lists .task {
+    display: block;
+    position: relative;
+    padding: 14px 40px 14px 14px;
+    border-bottom: 1px solid #0ad37fcb;
+  }
+  .todo-lists .task:last-child {
+    border-bottom: none;
+  }
+  .todo-lists .task:hover > button {
+    opacity: 2;
+  }
+  .todo-lists .task.completed {
+    color: #cdcdcd;
+    text-decoration: line-through;
+  }
+  .todo-lists .task input {
+    margin-right: 10px;
+  }
+  .todo-lists .task button {
+    color: #7a21ad;
+    margin: 14px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    opacity: 0;
+  }
+  .todo-lists .task button:hover {
+    color: #cf0f18;
+  }
